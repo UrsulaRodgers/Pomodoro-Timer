@@ -1,0 +1,104 @@
+.body {
+	background-color:#7E807C;
+}
+
+#container {
+	width:500px;
+	height:500px;
+	margin:0 auto;
+}
+#heading {
+	font-family: 'Bellefair', serif;
+	font-size:3em;
+	color:white;
+	position:relative;
+	top:30px;
+}
+
+#timer {
+	height:60%;
+	width:80%;
+	padding-top:30px;
+	border-radius:20px;
+ 	margin:8% auto auto auto;
+  	background-color:#E8EAE6;
+  	box-shadow: 7px 10px 5px 1px #656567, inset -1px -6px 12px 0.1px #89847e;
+}
+
+#display {
+	background-color:#DCDED8;
+	height:90px;
+	width:83%;
+	margin:0 auto;
+	border-radius:3px;
+	border:2px solid #B3B4B1;
+	position:relative;
+	top:20px;
+}
+#session, #break {
+	width:100px;
+}
+#reset {
+	width:70px;
+}
+#mode {
+	float:right;
+	padding-top:5px;
+	padding-right:5px;
+}
+
+#setSession, #setBreak, #countDown {
+	font-size:4em;
+	float:left;
+	padding-left:10px;
+}
+
+#setButtons {
+	width:80%;
+	display:flex;
+	justify-content:space-between;
+	margin-top:30px;
+	margin-left:40px;
+	position:relative;
+	top:10px;
+}
+#sessionReduce, #sessionIncrease, #breakReduce, #breakIncrease, #start, #stop {
+	width:70px;
+	height:70px;
+	border-radius:35px;
+}
+
+#start > p, #stop > p {
+	position:relative;
+	top:4px;
+}
+
+footer {
+	color:white;
+	position:relative;
+	top:120px;
+	font-family: 'Bellefair', serif;
+}
+
+footer > a {
+	color:red;
+}
+
+@media screen and (max-width: 500px){
+/*this scales the container div and therefore all of its contents*/
+  #container{
+  	position:relative;
+  	left:-2.5%;
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    
+    -o-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+}
