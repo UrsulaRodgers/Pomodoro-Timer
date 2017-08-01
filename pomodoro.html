@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="pomodoro2.css">
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="pomodoro.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+<div class="text-center" id="container">
+		<h1 id="heading">Pomodoro Time Manager</h1>
+		<div class="container-fluid text-center" id="timer">
+			<div class="text-center">
+				<div id="modeButtons">
+					<button class="btn btn-default" id="session"><p>SESSION</p></button>
+					<button class="btn btn-default" id="break"><p>BREAK</p></button>
+					<button class="btn btn-default" id="reset"><p>RESET</p></button>
+				</div>
+			</div>
+			<div id="display">
+				<p id="mode">MODE</p>
+				<p id="setSession">0</p>
+				<p id="setBreak" style="display:none">0</p>
+				<p id="countDown" style="display:none"></p>
+				<p id="breakCount" style="display:none"></p>
+			</div>
+			<div class="text-center">
+				<div id="setButtons">
+					<button class="btn btn-default" id="sessionReduce">-</button>
+					<button class="btn btn-default" id="breakReduce" style="display:none">-</button>
+					<button class="btn btn-default" id="sessionIncrease">+</button>
+					<button class="btn btn-default" id="breakIncrease" style="display:none">+</button>
+					<button class="btn btn-success" id="start"><p>START</p></button>
+					<button class="btn btn-danger" id="stop"><p>STOP</p></button>
+				</div>
+			</div>
+			<footer>What is the Pomodoro Technique? Find out <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">here</a></footer>
+</div>
+<audio id="endSession" src="session.mp3" type="audio/mp3" </audio>
+<audio id="endBreak" src="break.mp3" type="audio/mp3" </audio>
+</body>
+</html>
