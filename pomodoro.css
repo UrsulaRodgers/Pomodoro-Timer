@@ -1,3 +1,5 @@
+
+/*Pomodoro CSS*/
 .body {
 	background-color:#7E807C;
 }
@@ -12,7 +14,7 @@
 	font-size:3em;
 	color:white;
 	position:relative;
-	top:30px;
+	top:14%;
 }
 
 #timer {
@@ -20,7 +22,7 @@
 	width:80%;
 	padding-top:30px;
 	border-radius:20px;
- 	margin:8% auto auto auto;
+ 	margin:20% auto auto auto;
   	background-color:#E8EAE6;
   	box-shadow: 7px 10px 5px 1px #656567, inset -1px -6px 12px 0.1px #89847e;
 }
@@ -88,7 +90,7 @@ footer > a {
 /*this scales the container div and therefore all of its contents*/
   #container{
   	position:relative;
-  	left:-2.5%;
+  	left:1.5%;
     -moz-transform: scale(0.6);
     -ms-transform: scale(0.6);
     -o-transform: scale(0.6);
